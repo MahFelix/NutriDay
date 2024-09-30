@@ -13,6 +13,7 @@ const Nav = styled.nav`
   @media (max-width: 768px) {
     flex-direction: column;
     align-items: flex-start;
+    gap: 2px;
   }
 `;
 
@@ -34,6 +35,11 @@ const LogoImage = styled.img`
 const Title = styled.h1`
   font-size: 24px;
   color: #f69152;
+
+
+  span {
+    color: #1C244B;
+  }
 `;
 
 const NavLinkContainer = styled.div`
@@ -64,7 +70,7 @@ const Navbar = () => {
     <Nav>
       <LogoContainer>
         <LogoImage src={LogoND} alt="Logo" />
-        <Title>Dayane Souza</Title>
+        <Title>Dayane Souza<br></br><span> Nutricionista</span></Title>
       </LogoContainer>
 
       {/* Links de Navegação */}
