@@ -4,6 +4,7 @@ import GlobalStyle from '../globalStyles';
 import SectionCards from './components/SectionCards.jsx';;
 import Sobre from './components/Sobre.jsx'
 import FAQPage from './components/FAQPage.jsx';
+import Footer from './components/Footer.jsx';
 GlobalStyle
 
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
       <SectionCards/>
       <Sobre/>
       <FAQPage/>
+      <Footer/>
     </>
   );
 };

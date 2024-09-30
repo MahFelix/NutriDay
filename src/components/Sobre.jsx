@@ -1,4 +1,3 @@
-
 import styled from 'styled-components';
 import profileImage from '../assets/DBG.png'; // Substitua pelo caminho da sua imagem
 import BGBG from '../assets/BGBG.jpg'
@@ -15,6 +14,7 @@ const Container = styled.div`
   @media (max-width: 768px) {
     flex-direction: column; /* Para telas menores, os itens ficam empilhados */
     align-items: center;
+    padding: 20px; /* Ajusta o padding em telas menores */
   }
 `;
 
@@ -42,25 +42,36 @@ const Heading = styled.h1`
 `;
 
 const Paragraph = styled.p`
-  font-size: 26px;
+  font-size: 22px;
   color: #1C244B;
   line-height: 1.6; /* Melhora a legibilidade */
   align-items: center;
-  width: 50%;
+  width: 60%;
 
+  @media (max-width: 1024px) {
+    width: 80%;
+    font-size: 20px; /* Ajusta o tamanho da fonte para telas médias */
+  }
 
   @media (max-width: 768px) {
-    width: 80%;
-    font-size: 20px;
+    width: 90%;
+    font-size: 18px; /* Ajusta o tamanho da fonte para telas menores */
+  }
+
+  @media (max-width: 480px) {
+    width: 100%;
+    font-size: 16px; /* Ajusta o tamanho da fonte para telas muito pequenas */
   }
 `;
-
 
 const Image = styled.img`
   width: 600px; /* Tamanho da imagem */
   height: auto; /* Manter a proporção */
   margin-bottom: 50px;
 
+  @media (max-width: 1024px) {
+    width: 80%; /* Ajusta a imagem para telas médias */
+  }
 
   @media (max-width: 768px) {
     width: 100%; /* Imagem ocupa toda a largura em telas menores */
@@ -72,13 +83,13 @@ const AboutMe = () => {
   return (
     <Container>
       <TextSection>
-      <Image src={profileImage} alt="Dayane Souza" />
+        <Image src={profileImage} alt="Dayane Souza" />
         <Heading>SOBRE MIM </Heading>
         <Paragraph>
           Olá, eu sou Dayane Souza, apaixonada por promover uma alimentação equilibrada e um estilo de vida saudável. Minha missão é ajudar você a atingir seus objetivos, seja melhorar sua saúde, alcançar o peso ideal, ou aprender a fazer escolhas alimentares mais conscientes e nutritivas.
         </Paragraph>
         <Paragraph>
-          Com uma formação em Nutrição pela Estácio, e diversas especializações em, eu trago uma abordagem individualizada, respeitando suas necessidades, gostos e rotina. Acredito que cada pessoa é única e merece um plano alimentar que se encaixe no seu estilo de vida.
+          Com uma formação em Nutrição pela Estácio, e diversas especializações, eu trago uma abordagem individualizada, respeitando suas necessidades, gostos e rotina. Acredito que cada pessoa é única e merece um plano alimentar que se encaixe no seu estilo de vida.
         </Paragraph>
         <Paragraph>
           Além do acompanhamento nutricional, gosto de educar meus pacientes para que possam desenvolver uma relação saudável com a comida, entendendo que uma boa nutrição é um investimento a longo prazo na sua qualidade de vida. Vamos juntos criar hábitos que vão transformar sua saúde e bem-estar!
@@ -87,7 +98,6 @@ const AboutMe = () => {
           Sinta-se à vontade para explorar o site e agendar uma consulta. Estou aqui para te guiar nessa jornada rumo a uma vida mais saudável e equilibrada!
         </Paragraph>
       </TextSection>
-      
     </Container>
   );
 };
