@@ -7,7 +7,7 @@ const Nav = styled.nav`
   align-items: center;
   padding: 20px;
   background-color: #f8ead9;
-  border: 1px solid;
+
 
 
   @media (max-width: 768px) {
