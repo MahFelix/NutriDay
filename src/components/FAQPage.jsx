@@ -84,7 +84,7 @@ const FAQPage = () => {
   const faqData = [
     {
       question: 'As consultas são online?',
-      answer: 'Sim, os atendimentos são realizados online com a mesma qualidade das consultas presenciais.',
+      answer: 'Sim, ofereço atendimentos tanto online quanto presenciais, garantindo a mesma qualidade e cuidado em ambos os formatos. A escolha entre consulta presencial ou online é sua, dependendo da sua preferência e conveniência.',
     },
     {
       question: 'Quantas consultas são necessárias?',
