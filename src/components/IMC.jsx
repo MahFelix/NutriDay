@@ -201,7 +201,7 @@ const IMCForm = () => {
           value={message}
           onChange={(e) => setMessage(e.target.value)}
           rows="4"
-          placeholder="Escreva sua mensagem"
+          placeholder="Escreva sua mensagem (OPCIONAL)"
         />
         <Button onClick={sendWhatsAppMessage}>Enviar para WhatsApp</Button>
       </Form>
