@@ -44,7 +44,7 @@ const Title = styled.h1`
 
 const NavLinkContainer = styled.div`
   display: flex;
-  gap: 20px;
+  gap: 5px;
 
 
  
