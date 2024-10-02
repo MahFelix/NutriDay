@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import LogoND from '../assets/LogoND.png'
+import LogoND from '../assets/Camada 1.png'
 
 const Nav = styled.nav`
   display: flex;
@@ -27,8 +27,8 @@ const LogoContainer = styled.div`
 `;
 
 const LogoImage = styled.img`
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
   margin-right: 10px;
 `;
 
