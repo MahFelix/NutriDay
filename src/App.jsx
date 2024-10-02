@@ -5,6 +5,7 @@ import SectionCards from './components/SectionCards.jsx';;
 import Sobre from './components/Sobre.jsx'
 import FAQPage from './components/FAQPage.jsx';
 import Footer from './components/Footer.jsx';
+import IMC from './components/IMC.jsx'
 GlobalStyle
 
 const App = () => {
@@ -14,6 +15,7 @@ const App = () => {
       <Navbar />
       <About />
       <SectionCards/>
+      <IMC />
       <Sobre/>
       <FAQPage/>
       <Footer/>
