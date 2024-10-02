@@ -139,7 +139,7 @@ const IMCForm = () => {
   };
 
   return (
-    <Container>
+    <Container id='imc'>
       <IMCApp>
         <Title>Calcule seu IMC</Title>
         <Label>Peso (kg):</Label>

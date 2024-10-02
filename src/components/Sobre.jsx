@@ -81,7 +81,7 @@ const Image = styled.img`
 
 const AboutMe = () => {
   return (
-    <Container>
+    <Container id='sobre'>
       <TextSection>
         <Image src={profileImage} alt="Dayane Souza" />
         <Heading>SOBRE MIM </Heading>

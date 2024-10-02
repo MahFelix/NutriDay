@@ -75,10 +75,11 @@ const Navbar = () => {
 
       {/* Links de Navegação */}
       <NavLinkContainer >
-        <NavLink href="#inicio">Início</NavLink>
+        <NavLink href="#serviços">Serviços</NavLink>
         <NavLink href="#sobre">Sobre</NavLink>
-        <NavLink href="#planejamento">Planejamento</NavLink>
-        <NavLink href="#contato">Contato</NavLink>
+        <NavLink href="#imc">Contato</NavLink>
+        <NavLink href="#imc">Calcule seu IMC</NavLink>
+        <NavLink href="#faq">FAQ</NavLink>
       </NavLinkContainer>
     </Nav>
   );
