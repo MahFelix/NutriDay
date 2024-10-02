@@ -1,16 +1,17 @@
 import styled from 'styled-components';
 import BGBG from '../assets/BGBG.jpg';
+import { FaHeartbeat, FaAppleAlt, FaWeight, FaUtensils, FaCapsules, FaClinicMedical } from 'react-icons/fa';
 
 export const Container = styled.div`
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Garante 2 colunas */
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   padding: 40px;
   background-color: #F8EAD9;
   background-image: url(${BGBG});
 
   @media (max-width: 768px) {
-    grid-template-columns: 1fr; /* Em telas menores, uma coluna */
+    grid-template-columns: 1fr;
     padding: 20px;
   }
 `;
@@ -25,13 +26,13 @@ export const Card = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 100%; /* Todos os cards terão a mesma altura */
+  height: 100%;
   transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 
   &:hover {
-    transform: translateY(-10px) scale(1.05); /* Elevação e leve aumento */
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Sombra mais intensa */
-    background-color: #32a74d; /* Muda a cor do background no hover */
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: #32a74d;
   }
 
   @media (max-width: 768px) {
@@ -44,7 +45,7 @@ export const Icon = styled.div`
   transition: transform 0.3s ease;
 
   ${Card}:hover & {
-    transform: rotate(360deg); /* Rotaciona o ícone ao passar o mouse */
+    transform: rotate(360deg);
   }
 `;
 
@@ -68,7 +69,7 @@ export const Description = styled.p`
   }
 `;
 
-export const Button = styled.button`
+export const Button = styled.a` /* Alterando de button para a para criar um link */
   background-color: #3BC550;
   display: flex;
   border: none;
@@ -81,17 +82,25 @@ export const Button = styled.button`
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  text-decoration: none; /* Remover sublinhado */
   transition: background-color 0.3s ease, transform 0.3s ease;
 
   &:hover {
-    background-color: #2d9643; /* Mudança de cor no hover */
-    transform: scale(1.1); /* Aumenta levementeo botão ao passar o mouse */ }
+    background-color: #2d9643;
+    transform: scale(1.1);
+  }
 
-@media (max-width: 768px) { width: 200px; height: 60px; font-size: 20px; } `;
-
-import { FaHeartbeat, FaAppleAlt, FaWeight, FaUtensils, FaCapsules, FaClinicMedical } from 'react-icons/fa';
+  @media (max-width: 768px) {
+    width: 200px;
+    height: 60px;
+    font-size: 20px;
+  }
+`;
 
 const SectionCards = () => {
+  const whatsappNumber = '5579996848609'; // Substitua pelo número de telefone da nutricionista
+  const welcomeMessage = 'Olá! Seja bem-vindo(a) ao nosso atendimento nutricional. Estou aqui para ajudar você a alcançar seus objetivos de saúde e bem-estar de forma personalizada. Sinta-se à vontade para me enviar suas dúvidas ou agendar sua consulta.';
+
   const cardsData = [
     {
       icon: <FaHeartbeat size={40} color="#fff" />,
@@ -142,7 +151,7 @@ const SectionCards = () => {
           <Icon>{card.icon}</Icon>
           <Title>{card.title}</Title>
           <Description>{card.description}</Description>
-          <Button>Marcar Consulta</Button>
+          <Button href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(welcomeMessage)}`}>Marcar Consulta</Button>
         </Card>
       ))}
     </Container>
