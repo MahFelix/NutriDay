@@ -50,7 +50,7 @@ const Heading = styled.h1`
   }
 `;
 
-const Button = styled.button`
+const Button = styled.a`
   background-color: #3BC550;
   border: none;
   padding: 10px 20px;
@@ -60,6 +60,10 @@ const Button = styled.button`
   height: 70px;
   border-radius: 12px;
   cursor: pointer;
+  text-decoration: none; /* Remove underline */
+  display: inline-flex; /* Para centralizar texto */
+  justify-content: center; /* Centraliza o texto horizontalmente */
+  align-items: center; /* Centraliza o texto verticalmente */
   margin-top: 20px; /* Adicionado para espaçamento entre o título e o botão */
 
   &:hover {
@@ -80,13 +84,15 @@ const Button = styled.button`
 `;
 
 const Home = () => {
+  const whatsappNumber = '5579996848609'; // Substitua pelo número de telefone da nutricionista
+  const welcomeMessage = 'Olá! Seja bem-vindo(a) Sou Dayane Souza - Nutricionista. Estou aqui para ajudar você a alcançar seus objetivos de saúde e bem-estar de forma personalizada. Sinta-se à vontade para me enviar suas dúvidas ou agendar sua consulta.';
   return (
     <Container>
       <TextSection>
         <Heading>
           Descubra como alcançar seus objetivos de saúde e bem-estar com uma consulta online de nutrição personalizada.
         </Heading>
-        <Button>Marcar consulta</Button>
+        <Button href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(welcomeMessage)}`}>Marcar consulta</Button>
       </TextSection>
     </Container>
   );
