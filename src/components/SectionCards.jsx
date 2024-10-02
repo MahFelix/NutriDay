@@ -1,14 +1,16 @@
 import styled from 'styled-components';
-import BGBG from '../assets/BGBG.jpg'
+import BGBG from '../assets/BGBG.jpg';
 
 export const Container = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adaptável para o tamanho da tela */
+  grid-template-columns: repeat(2, 1fr); /* Garante 2 colunas */
   gap: 20px;
   padding: 40px;
   background-color: #F8EAD9;
   background-image: url(${BGBG});
+
   @media (max-width: 768px) {
+    grid-template-columns: 1fr; /* Em telas menores, uma coluna */
     padding: 20px;
   }
 `;
@@ -24,6 +26,13 @@ export const Card = styled.div`
   justify-content: space-between;
   align-items: center;
   height: 100%; /* Todos os cards terão a mesma altura */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+
+  &:hover {
+    transform: translateY(-10px) scale(1.05); /* Elevação e leve aumento */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Sombra mais intensa */
+    background-color: #32a74d; /* Muda a cor do background no hover */
+  }
 
   @media (max-width: 768px) {
     padding: 15px;
@@ -32,6 +41,11 @@ export const Card = styled.div`
 
 export const Icon = styled.div`
   margin-bottom: 15px;
+  transition: transform 0.3s ease;
+
+  ${Card}:hover & {
+    transform: rotate(360deg); /* Rotaciona o ícone ao passar o mouse */
+  }
 `;
 
 export const Title = styled.h2`
@@ -67,20 +81,15 @@ export const Button = styled.button`
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 
   &:hover {
-    background-color: #32a74d;
-  }
+    background-color: #2d9643; /* Mudança de cor no hover */
+    transform: scale(1.1); /* Aumenta levemente o botão ao passar o mouse */ }
 
-  @media (max-width: 768px) {
-    width: 200px;
-    height: 60px;
-    font-size: 20px;
-  }
-`;
+@media (max-width: 768px) { width: 200px; height: 60px; font-size: 20px; } `;
 
-
-import {  FaHeartbeat, FaAppleAlt, FaWeight, FaUtensils, FaCapsules, FaClinicMedical } from 'react-icons/fa'; // Importando ícones
+import { FaHeartbeat, FaAppleAlt, FaWeight, FaUtensils, FaCapsules, FaClinicMedical } from 'react-icons/fa';
 
 const SectionCards = () => {
   const cardsData = [
