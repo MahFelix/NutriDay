@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import backgroundImage from '../assets/BG.jpg'; // Substitua pelo caminho correto da sua imagem
-import backgroundImageMobile from '../assets/BGBG2.png'
+import backgroundImageMobile from '../assets/BGBG2.png';
 
 const Container = styled.div`
   display: flex;
@@ -15,7 +15,6 @@ const Container = styled.div`
   background-position: center; /* Centraliza a imagem */
   background-repeat: no-repeat; /* Evita repetição da imagem */
 
-
   @media (max-width: 768px) {
     background-image: url(${backgroundImageMobile}); /* Imagem de fundo para mobile */
   }
@@ -25,16 +24,17 @@ const TextSection = styled.div`
   display: flex;
   flex-direction: column;
   flex: 1;
-  padding-right: 50px;
-  min-width: 300px; /* Define uma largura mínima */
+  padding: 20px; /* Reduzido para melhorar a responsividade */
   justify-content: center;
   align-items: center;
+  text-align: center; /* Centraliza o texto em telas menores */
 `;
 
 const Heading = styled.h1`
   font-size: 75px;
   color: #1C244B;
-  width: 40%; /* Ajusta a largura do título */
+  max-width: 600px; /* Define uma largura máxima para o título */
+  margin: 0 auto; /* Centraliza horizontalmente */
 
   @media (max-width: 1024px) {
     font-size: 60px; /* Ajuste para telas médias */
@@ -42,12 +42,11 @@ const Heading = styled.h1`
 
   @media (max-width: 768px) {
     font-size: 45px; /* Ajuste para tablets */
-    width: 100%; /* Para garantir que o texto ocupe a largura total em telas menores */
-    text-align: center; /* Centraliza o texto em telas menores */
+    width: 90%; /* Aumenta a largura para ocupar mais espaço em telas menores */
   }
 
   @media (max-width: 480px) {
-    font-size: 30px; /* Ajuste para telas de celulares */
+    font-size: 35px; /* Ajuste para telas de celulares */
   }
 `;
 
@@ -61,20 +60,20 @@ const Button = styled.button`
   height: 70px;
   border-radius: 12px;
   cursor: pointer;
+  margin-top: 20px; /* Adicionado para espaçamento entre o título e o botão */
+
   &:hover {
     background-color: #d88804;
   }
 
   @media (max-width: 768px) {
     font-size: 24px;
-    width: 200px;
+    width: 100%; /* Ajusta a largura do botão para ocupar 100% do contêiner */
     height: 80px;
-    margin-top: 30px;
-
   }
 
   @media (max-width: 480px) {
-    font-size: 14px;
+    font-size: 17px;
     width: 130px;
     height: 50px;
   }
