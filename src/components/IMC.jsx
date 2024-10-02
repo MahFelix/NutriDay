@@ -106,7 +106,7 @@ const IMCForm = () => {
   };
 
   const sendWhatsAppMessage = () => {
-    const whatsappNumber = "5511999999999"; // Insira o número da nutricionista
+    const whatsappNumber = "5579996848609"; // Insira o número da nutricionista
     const whatsappMessage = `Olá! Meu nome é ${name}, tenho ${age} anos e meu IMC é ${imcResult}. Gostaria de conversar sobre isso.
     \nMensagem: ${message}`;
     
