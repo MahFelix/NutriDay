@@ -10,6 +10,11 @@ const Container = styled.div`
   background-color: #F8EAD9;
   padding: 20px;
   background-image: url(${BGBG});
+  
+  @media (max-width: 768px) {
+    flex-direction: column;
+    height: auto;
+  }
 `;
 
 const IMCApp = styled.div`
@@ -22,8 +27,13 @@ const IMCApp = styled.div`
   flex-direction: column;
   align-items: center;
   height: auto;
-  height: 54vh;
   justify-content: center;
+
+  @media (max-width: 768px) {
+    margin-right: 0;
+    margin-bottom: 20px;
+    padding: 20px;
+  }
 `;
 
 const Form = styled.div`
@@ -34,6 +44,10 @@ const Form = styled.div`
   display: flex;
   flex-direction: column;
   gap: 20px;
+
+  @media (max-width: 768px) {
+    padding: 20px;
+  }
 `;
 
 const Input = styled.input`
@@ -64,6 +78,11 @@ const Button = styled.button`
   &:hover {
     background-color: #32a74d;
   }
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+    padding: 8px;
+  }
 `;
 
 const Title = styled.h2`
@@ -83,6 +102,11 @@ const IMCInfo = styled.div`
   border-radius: 8px;
   text-align: center;
   color: #1C244B;
+
+  @media (max-width: 768px) {
+    padding: 10px;
+    font-size: 14px;
+  }
 `;
 
 const IMCInfoText = styled.p`
