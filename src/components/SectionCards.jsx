@@ -85,7 +85,7 @@ export const Button = styled.button`
 
   &:hover {
     background-color: #2d9643; /* Mudança de cor no hover */
-    transform: scale(1.1); /* Aumenta levemente o botão ao passar o mouse */ }
+    transform: scale(1.1); /* Aumenta levementeo botão ao passar o mouse */ }
 
 @media (max-width: 768px) { width: 200px; height: 60px; font-size: 20px; } `;
 

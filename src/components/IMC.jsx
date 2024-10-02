@@ -123,7 +123,7 @@ const IMCForm = () => {
 
   const calculateIMC = () => {
     if (weight && height) {
-      const heightInMeters = height / 1; // Converter cm para metros
+      const heightInMeters = height / 100; // Converter cm para metros
       const imc = (weight / (heightInMeters * heightInMeters)).toFixed(1); // Arredondando para uma casa decimal
       setImcResult(imc);
     }
