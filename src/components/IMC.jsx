@@ -1,15 +1,14 @@
 import { useState } from 'react';
 import styled from 'styled-components';
-import BGBG from '../assets/BGBG.jpg';
+
 
 const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   height: 70vh;
-  background-color: #F8EAD9;
   padding: 20px;
-  background-image: url(${BGBG});
+
   
   @media (max-width: 768px) {
     flex-direction: column;

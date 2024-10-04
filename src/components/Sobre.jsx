@@ -1,15 +1,14 @@
 import styled from 'styled-components';
 import profileImage from '../assets/DBG.png'; // Substitua pelo caminho da sua imagem
-import BGBG from '../assets/BGBG.jpg'
+
 
 const Container = styled.div`
   display: flex;
   flex-direction: row; /* Para telas grandes, os itens ficam lado a lado */
   align-items: center;
   padding: 40px;
-  background-color: #F8EAD9;
-  justify-content: center;
-  background-image: url(${BGBG});
+justify-content: center;
+
 
   @media (max-width: 768px) {
     flex-direction: column; /* Para telas menores, os itens ficam empilhados */

@@ -2,17 +2,17 @@
 
 import styled from 'styled-components';
 import { useState } from 'react'; // Adicionado o useState
-import BGBG from '../assets/BGBG.jpg'
+// import BGBG from '../assets/BGBG.jpg'
 
 
 
 // Estilos para o container principal
 const Container = styled.div`
   width: 100%;
-  background-color: #F8EAD9;
+
   padding: 20px;
   border-radius: 12px;
-  background-image: url(${BGBG});
+background-color: #FFD9A1;
 `;
 
 // Estilos para o título

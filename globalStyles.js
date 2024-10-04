@@ -1,5 +1,6 @@
+// globalStyles.js
 import { createGlobalStyle } from 'styled-components';
-import BGBG from './src/assets/BGBG.jpg'; // Caminho para sua imagem de background
+import BGBG from './src/assets/BGBG.jpg'; // Certifique-se de que o caminho está correto
 
 const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
@@ -12,14 +13,14 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     font-family: 'Poppins', sans-serif;
-    background-image: url(${BGBG});  /* Adicionando o background */
+    background-image: url(${BGBG});
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 100vh;
+    background-attachment: fixed; /* Mantém o background fixo */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+    min-height: 100vh; /* Garante que o background cubra toda a altura da tela */
   }
 
-  /* Garantir que as divs ocupem 100% da altura disponível */
   html, body, #root {
     height: 100%;
   }

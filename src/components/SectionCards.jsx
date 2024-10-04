@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import BGBG from '../assets/BGBG.jpg';
+
 import { FaHeartbeat, FaAppleAlt, FaWeight, FaUtensils, FaCapsules, FaClinicMedical } from 'react-icons/fa';
 
 export const Container = styled.div`
@@ -7,8 +7,7 @@ export const Container = styled.div`
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   padding: 40px;
-  background-color: #F8EAD9;
-  background-image: url(${BGBG});
+
 
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
