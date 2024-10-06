@@ -11,6 +11,7 @@ GlobalStyle
 const App = () => {
   return (
     <>
+    
     <GlobalStyle/>
       <Navbar />
       <About />
@@ -19,6 +20,7 @@ const App = () => {
       <Sobre/>
       <FAQPage/>
       <Footer/>
+
     </>
   );
 };
