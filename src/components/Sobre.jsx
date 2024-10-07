@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import profileImage from '../assets/DBG.png'; // Substitua pelo caminho da sua imagem
+import profileImage from '../assets/DBG.webp'; // Substitua pelo caminho da sua imagem
 
 
 const Container = styled.div`
