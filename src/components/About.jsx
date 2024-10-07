@@ -31,7 +31,7 @@ const TextSection = styled.div`
 `;
 
 const Heading = styled.h1`
-  font-size: 75px;
+  font-size: 64px;
   color: #1C244B;
   max-width: 600px; /* Define uma largura máxima para o título */
   margin: 0 auto; /* Centraliza horizontalmente */
