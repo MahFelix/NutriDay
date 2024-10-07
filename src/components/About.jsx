@@ -51,7 +51,7 @@ const Heading = styled.h1`
 `;
 
 const Button = styled.a`
-  background-color: #3BC550;
+  background-color: #F69152;
   border: none;
   padding: 10px 20px;
   font-size: 18px;
@@ -67,7 +67,8 @@ const Button = styled.a`
   margin-top: 20px; /* Adicionado para espaçamento entre o título e o botão */
 
   &:hover {
-    background-color: #d88804;
+    background-color:  #2d9643;
+    border: solid 1px #F69152;
   }
 
   @media (max-width: 768px) {
