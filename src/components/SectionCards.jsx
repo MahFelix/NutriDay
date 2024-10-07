@@ -69,7 +69,7 @@ export const Description = styled.p`
 `;
 
 export const Button = styled.a` /* Alterando de button para a para criar um link */
-  background-color: #3BC550;
+  background-color: #F69152;
   display: flex;
   border: none;
   padding: 10px 20px;
@@ -87,10 +87,12 @@ export const Button = styled.a` /* Alterando de button para a para criar um link
   &:hover {
     background-color: #2d9643;
     transform: scale(1.1);
+    border: solid 1px;
+    border-color: #F69152;
   }
 
   @media (max-width: 768px) {
-    width: 200px;
+    max-width: 200px;
     height: 60px;
     font-size: 20px;
   }
