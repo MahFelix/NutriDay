@@ -56,6 +56,7 @@ const NavLinkContainer = styled.div`
     transition: max-height 0.7s ease-in-out;
     
     
+    
   
   }
 `;
@@ -67,15 +68,18 @@ const NavLink = styled.a`
   padding: 10px;
   border-radius: 6px;
   background-color: #FFD990;
-
+  
   &:hover {
     color: green;
   }
 
   @media (max-width: 768px) {
+    display: flex;
    background-color: #00A091;
    width: 100%;
    border-radius: 14px;
+   align-items: center;
+   justify-content: center;
 
   
   
