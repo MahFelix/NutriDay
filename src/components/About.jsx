@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import backgroundImage from '../assets/BG.webp'; // Substitua pelo caminho correto da sua imagem
-import backgroundImageMobile from '../assets/BGBG2.webp';
+import backgroundImageMobile from '../assets/daymobile.png';
 
 const Container = styled.div`
   display: flex;
@@ -9,7 +9,7 @@ const Container = styled.div`
   height: 80vh;
   padding: 20px;
   flex-wrap: wrap;
-  background-color: #F8EAD9;
+  background-color: #ffffff;
   background-image: url(${backgroundImage});
   background-size: cover; /* A imagem cobre todo o container */
   background-position: center; /* Centraliza a imagem */
@@ -17,6 +17,7 @@ const Container = styled.div`
 
   @media (max-width: 768px) {
     background-image: url(${backgroundImageMobile}); /* Imagem de fundo para mobile */
+    
   }
 `;
 

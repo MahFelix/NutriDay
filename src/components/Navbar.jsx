@@ -8,7 +8,7 @@ const Nav = styled.nav`
   align-items: center;
   padding: 20px;
   position: relative; /* Necessário para posicionar o menu */
-  background-color: #ADCD93;
+  background-color:#00A091;
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
 
@@ -48,6 +48,7 @@ const NavLinkContainer = styled.div`
     align-items: center;
     width: 100%;
     padding: 1px 20px;
+    margin-top: -5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 4px;
     max-height: ${({ isOpen }) => (isOpen ? '300px' : '0')};
@@ -72,8 +73,11 @@ const NavLink = styled.a`
   }
 
   @media (max-width: 768px) {
-   background-color: #ADCD93;
+   background-color: #00A091;
    width: 100%;
+   border-radius: 14px;
+
+  
   
     
   }
