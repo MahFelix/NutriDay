@@ -113,7 +113,7 @@ const Navbar = () => {
       </HamburgerMenu>
 
       <NavLinkContainer isOpen={isOpen}>
-        <NavLink href="#serviços">Serviços</NavLink>
+        <NavLink href="#serviços">Planos Alimentares</NavLink>
         <NavLink href="#sobre">Sobre</NavLink>
         <NavLink href="#imc">Contato</NavLink>
         <NavLink target='_blank' href="https://imcday.netlify.app/">Calcule seu IMC</NavLink>
