@@ -38,6 +38,9 @@ const Question = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size: 20px;
+
+
 
   &:hover {
     background-color: #32a74d;
@@ -57,10 +60,13 @@ const Answer = styled.div`
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   display: ${props => (props.isOpen ? 'block' : 'none')};
-  font-size: 18px;
+  font-size: 20px;
+
 
   @media (max-width: 768px) {
     font-size: 16px;
+
+    
   }
 `;
 

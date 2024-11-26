@@ -36,6 +36,7 @@ const Heading = styled.h1`
   max-width: 600px; /* Define uma largura máxima para o título */
   margin: 0 auto; /* Centraliza horizontalmente */
 
+
   @media (max-width: 1024px) {
     font-size: 60px; /* Ajuste para telas médias */
   }
@@ -47,6 +48,7 @@ const Heading = styled.h1`
 
   @media (max-width: 480px) {
     font-size: 35px; /* Ajuste para telas de celulares */
+    
   }
 `;
 

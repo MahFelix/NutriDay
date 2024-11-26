@@ -1,16 +1,16 @@
 import styled from 'styled-components';
-
 import { FaHeartbeat, FaAppleAlt, FaWeight, FaUtensils, FaCapsules, FaClinicMedical } from 'react-icons/fa';
 
 export const Container = styled.div`
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
   padding: 40px;
-
+  background-color: #FFE6A9;
 
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
+    gap: 16px;
     padding: 20px;
   }
 `;
@@ -35,12 +35,12 @@ export const Card = styled.div`
   }
 
   @media (max-width: 768px) {
-    padding: 15px;
+    padding: 16px;
   }
 `;
 
 export const Icon = styled.div`
-  margin-bottom: 15px;
+  margin-bottom: 12px;
   transition: transform 0.3s ease;
 
   ${Card}:hover & {
@@ -49,58 +49,58 @@ export const Icon = styled.div`
 `;
 
 export const Title = styled.h2`
-  font-size: 30px;
+  font-size: 22px;
   color: #fff;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 
   @media (max-width: 768px) {
-    font-size: 24px;
+    font-size: 18px;
   }
 `;
 
 export const Description = styled.p`
-  font-size: 24px;
+  font-size: 16px;
   color: #1C244B;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
 
   @media (max-width: 768px) {
-    font-size: 24px;
+    font-size: 14px;
   }
 `;
 
-export const Button = styled.a` /* Alterando de button para a para criar um link */
+export const Button = styled.a`
   background-color: #F69152;
   display: flex;
   border: none;
-  padding: 10px 20px;
-  font-size: 18px;
+  padding: 12px 16px;
+  font-size: 16px;
   color: white;
-  width: 200px;
-  height: 70px;
+  width: 100%;
+  max-width: 200px;
   border-radius: 12px;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  text-decoration: none; /* Remover sublinhado */
+  text-decoration: none;
   transition: background-color 0.3s ease, transform 0.3s ease;
 
   &:hover {
     background-color: #2d9643;
-    transform: scale(1.1);
+    transform: scale(1.05);
     border: solid 1px;
     border-color: #F69152;
   }
 
   @media (max-width: 768px) {
-    max-width: 200px;
-    height: 60px;
-    font-size: 20px;
+    max-width: 180px;
+    font-size: 14px;
   }
 `;
 
 const SectionCards = () => {
-  const whatsappNumber = '5579996848609'; // Substitua pelo número de telefone da nutricionista
-  const welcomeMessage = 'Olá! Seja bem-vindo(a) Sou Dayane Souza - Nutricionista. Estou aqui para ajudar você a alcançar seus objetivos de saúde e bem-estar de forma personalizada. Sinta-se à vontade para me enviar suas dúvidas ou agendar sua consulta.';
+  const whatsappNumber = '5579996848609';
+  const welcomeMessage =
+    'Olá! Seja bem-vindo(a) Sou Dayane Souza - Nutricionista. Estou aqui para ajudar você a alcançar seus objetivos de saúde e bem-estar de forma personalizada. Sinta-se à vontade para me enviar suas dúvidas ou agendar sua consulta.';
 
   const cardsData = [
     {
@@ -121,7 +121,7 @@ const SectionCards = () => {
     {
       icon: <FaUtensils size={40} color="#fff" />,
       title: "Plano alimentar personalizado",
-      description: "Plano alimentar personalizado, ajustado às suas necessidades e objetivos, para uma alimentação saudável e sustentável.",
+      description: "Plano alimentar ajustado às suas necessidades e objetivos, para uma alimentação saudável e sustentável.",
     },
     {
       icon: <FaWeight size={40} color="#fff" />,
@@ -131,7 +131,7 @@ const SectionCards = () => {
     {
       icon: <FaUtensils size={40} color="#fff" />,
       title: "Reeducação Alimentar",
-      description: "Reeducação alimentar para transformar sua relação com a comida, priorizando equilíbrio, saúde e bem-estar a longo prazo.",
+      description: "Reeducação alimentar para transformar sua relação com a comida, priorizando equilíbrio e bem-estar.",
     },
     {
       icon: <FaCapsules size={40} color="#fff" />,
@@ -146,7 +146,7 @@ const SectionCards = () => {
   ];
 
   return (
-    <Container id='serviços'>
+    <Container id="serviços">
       {cardsData.map((card, index) => (
         <Card key={index}>
           <Icon>{card.icon}</Icon>
