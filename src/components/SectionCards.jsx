@@ -6,13 +6,13 @@ export const Container = styled.div`
   grid-template-columns: repeat(4, 1fr);
   gap: 24px;
   padding: 40px;
-  background-color: #FFE6A9;
+  background-color: #F7F9F6;
 
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
     gap: 16px;
     padding: 20px;
-    background-color:#FFDBCA ;
+    background-color:#F7F9F6 ;
   }
 `;
 

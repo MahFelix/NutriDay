@@ -6,12 +6,12 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   padding: 40px;
-  background-color: #FFE6A9;
+  background-color: #F7F9F6;
 
   @media (max-width: 768px) {
     flex-direction: column;
     padding: 20px;
-    background-color: #FFDBCA;
+    background-color: #F7F9F6;
   }
 `;
 

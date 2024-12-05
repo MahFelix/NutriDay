@@ -31,7 +31,7 @@ const Title = styled.h1`
   color: #f69152;
 
   span {
-    color: #1C244B;
+    color: #f69152;
   }
 `;
 

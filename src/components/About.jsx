@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import backgroundImage from '../assets/BG.webp'; // Substitua pelo caminho correto da sua imagem
-import backgroundImageMobile from '../assets/daymobile.png';
+import backgroundImageMobile from '../assets/daymobile1.png';
 
 const Container = styled.div`
   display: flex;
@@ -9,7 +9,6 @@ const Container = styled.div`
   height: 80vh;
   padding: 20px;
   flex-wrap: wrap;
-  background-color: #ffffff;
   background-image: url(${backgroundImage});
   background-size: cover; /* A imagem cobre todo o container */
   background-position: center; /* Centraliza a imagem */
