@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 // Estilos para o container principal do Footer
 const FooterContainer = styled.footer`
-  background-color: #1C244B; /* Cor de fundo do footer */
+  background-color: #00A091; /* Cor de fundo do footer */
   padding: 20px;
   position: absolute;
   width: 100%;

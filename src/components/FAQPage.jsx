@@ -12,7 +12,7 @@ const Container = styled.div`
 
   padding: 20px;
   border-radius: 12px;
-background-color: #FFD9A1;
+background-color: #FFDBCA;
 `;
 
 // Estilos para o título

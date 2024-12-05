@@ -67,7 +67,7 @@ const NavLink = styled.a`
   font-size: 18px;
   padding: 10px;
   border-radius: 6px;
-  background-color: #FFD990;
+  background-color: #F69152;
   
   &:hover {
     color: green;

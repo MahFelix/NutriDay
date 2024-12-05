@@ -12,7 +12,7 @@ export const Container = styled.div`
     grid-template-columns: 1fr;
     gap: 16px;
     padding: 20px;
-    background-color: #;
+    background-color:#FFDBCA ;
   }
 `;
 
