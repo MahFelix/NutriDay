@@ -9,16 +9,15 @@ import { useState } from 'react'; // Adicionado o useState
 // Estilos para o container principal
 const Container = styled.div`
   width: 100%;
-
   padding: 20px;
   border-radius: 12px;
-background-color: #F7F9F6;
+  background-color: #d8dee9; /* Fundo claro e acolhedor */
 `;
 
 // Estilos para o título
 const Title = styled.h1`
   font-size: 50px;
-  color: #1C244B;
+  color: #2e3440; /* Cinza escuro profissional */
   text-align: center;
   margin-bottom: 40px;
 
@@ -29,7 +28,7 @@ const Title = styled.h1`
 
 // Estilos para cada pergunta
 const Question = styled.div`
-  background-color: #5ECC97;
+  background-color: #a3be8c; /* Verde suave para um toque natural */
   color: white;
   padding: 15px 20px;
   margin-bottom: 10px;
@@ -39,11 +38,10 @@ const Question = styled.div`
   justify-content: space-between;
   align-items: center;
   font-size: 20px;
-
-
+  transition: background-color 0.3s ease;
 
   &:hover {
-    background-color: #32a74d;
+    background-color: #88c0d0; /* Azul claro no hover */
   }
 
   @media (max-width: 768px) {
@@ -53,20 +51,19 @@ const Question = styled.div`
 
 // Estilos para a resposta
 const Answer = styled.div`
-  background-color: #fff;
-  color: #1C244B;
+  background-color: #ffffff;
+  color: #4c566a; /* Cinza suave para contraste */
   padding: 15px 20px;
   margin-bottom: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  display: ${props => (props.isOpen ? 'block' : 'none')};
-  font-size: 20px;
-
+  display: ${({ isOpen }) => (isOpen ? 'block' : 'none')};
+  font-size: 18px;
+  line-height: 1.6;
+  transition: all 0.3s ease;
 
   @media (max-width: 768px) {
     font-size: 16px;
-
-    
   }
 `;
 

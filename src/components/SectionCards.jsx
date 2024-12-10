@@ -6,18 +6,18 @@ export const Container = styled.div`
   grid-template-columns: repeat(4, 1fr);
   gap: 24px;
   padding: 40px;
-  background-color: #F7F9F6;
+  background-color: #d8dee9; /* Fundo claro harmonioso */
 
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
     gap: 16px;
     padding: 20px;
-    background-color:#F7F9F6 ;
+    background-color: #d8dee9;
   }
 `;
 
 export const Card = styled.div`
-  background-color: #5ECC97;
+  background-color: #a3be8c; /* Verde suave representando saúde */
   padding: 20px;
   border-radius: 12px;
   text-align: center;
@@ -32,7 +32,7 @@ export const Card = styled.div`
   &:hover {
     transform: translateY(-10px) scale(1.05);
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    background-color: #32a74d;
+    background-color: #88c0d0; /* Azul claro para o hover */
   }
 
   @media (max-width: 768px) {
@@ -51,7 +51,7 @@ export const Icon = styled.div`
 
 export const Title = styled.h2`
   font-size: 22px;
-  color: #fff;
+  color: #2e3440; /* Cinza escuro para contraste */
   margin-bottom: 8px;
 
   @media (max-width: 768px) {
@@ -61,7 +61,7 @@ export const Title = styled.h2`
 
 export const Description = styled.p`
   font-size: 16px;
-  color: #1C244B;
+  color: #4c566a; /* Cinza suave para texto */
   margin-bottom: 12px;
 
   @media (max-width: 768px) {
@@ -70,7 +70,7 @@ export const Description = styled.p`
 `;
 
 export const Button = styled.a`
-  background-color: #F69152;
+  background-color: #5e81ac; /* Azul intermediário elegante */
   display: flex;
   border: none;
   padding: 12px 16px;
@@ -86,10 +86,10 @@ export const Button = styled.a`
   transition: background-color 0.3s ease, transform 0.3s ease;
 
   &:hover {
-    background-color: #2d9643;
+    background-color: #a3be8c; /* Verde suave no hover */
     transform: scale(1.05);
     border: solid 1px;
-    border-color: #F69152;
+    border-color: #88c0d0; /* Azul claro para a borda */
   }
 
   @media (max-width: 768px) {
@@ -97,6 +97,7 @@ export const Button = styled.a`
     font-size: 14px;
   }
 `;
+
 
 const SectionCards = () => {
   const whatsappNumber = '5579996848609';

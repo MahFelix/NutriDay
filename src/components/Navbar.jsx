@@ -8,11 +8,9 @@ const Nav = styled.nav`
   align-items: center;
   padding: 20px;
   position: relative; /* Necessário para posicionar o menu */
-  background-color:#00A091;
+  background-color: #88c0d0; /* Azul claro harmonioso */
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
-
-
 `;
 
 const LogoContainer = styled.div`
@@ -28,10 +26,10 @@ const LogoImage = styled.img`
 
 const Title = styled.h1`
   font-size: 24px;
-  color: #f69152;
+  color: #2e3440; /* Cinza escuro profissional */
 
   span {
-    color: #f69152;
+    color: #5e81ac; /* Azul intermediário elegante */
   }
 `;
 
@@ -43,7 +41,7 @@ const NavLinkContainer = styled.div`
     position: absolute;
     top: 100%;
     right: 0;
-    background-color: transparent;
+    background-color: transparent; /* Fundo claro para contraste */
     flex-direction: column;
     align-items: center;
     width: 100%;
@@ -54,36 +52,29 @@ const NavLinkContainer = styled.div`
     max-height: ${({ isOpen }) => (isOpen ? '300px' : '0')};
     overflow: hidden;
     transition: max-height 0.7s ease-in-out;
-    
-    
-    
-  
   }
 `;
 
 const NavLink = styled.a`
   text-decoration: none;
-  color: black;
+  color: #2e3440; /* Cinza escuro para texto */
   font-size: 18px;
   padding: 10px;
   border-radius: 6px;
-  background-color: #F69152;
-  
+  background-color: #a3be8c; /* Verde suave representando saúde */
+
   &:hover {
-    color: green;
+    color: #4c566a; /* Escurece no hover */
   }
 
   @media (max-width: 768px) {
     display: flex;
-   background-color: #00A091;
-   width: 100%;
-   border-radius: 14px;
-   align-items: center;
-   justify-content: center;
-
-  
-  
-    
+    background-color: #88c0d0; /* Azul claro no mobile */
+    width: 100%;
+    margin-top: 4px;
+    border-radius: 14px;
+    align-items: center;
+    justify-content: center;
   }
 `;
 
@@ -94,7 +85,6 @@ const HamburgerMenu = styled.div`
 
   @media (max-width: 768px) {
     display: block;
-    
   }
 `;
 
@@ -121,11 +111,11 @@ const Navbar = () => {
       </HamburgerMenu>
 
       <NavLinkContainer isOpen={isOpen}>
-        <NavLink href="#serviços">Planos Alimentares</NavLink>
-        <NavLink href="#sobre">Sobre</NavLink>
-        <NavLink href="#imc">Contato</NavLink>
-        <NavLink target='_blank' href="https://imcday.netlify.app/">Calcule seu IMC</NavLink>
-        <NavLink href="#faq">FAQ</NavLink>
+        <NavLink href="#serviços"><strong>Planos Alimentares</strong></NavLink>
+        <NavLink href="#sobre"><strong>Sobre</strong></NavLink>
+        <NavLink href="#imc"><strong>Contato</strong></NavLink>
+        <NavLink target='_blank' href="https://imcday.netlify.app/"><strong>Calcule seu IMC</strong></NavLink>
+        <NavLink href="#faq"><strong>FAQ</strong></NavLink>
       </NavLinkContainer>
     </Nav>
   );

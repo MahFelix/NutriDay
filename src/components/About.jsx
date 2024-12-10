@@ -53,7 +53,7 @@ const Heading = styled.h1`
 `;
 
 const Button = styled.a`
-  background-color: #00A682;
+  background-color:#5e81ac;
   border: none;
   padding: 10px 20px;
   font-size: 18px;
