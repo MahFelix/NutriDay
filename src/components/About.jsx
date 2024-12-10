@@ -24,36 +24,38 @@ const TextSection = styled.div`
   display: flex;
   flex-direction: column;
   flex: 1;
-  padding: 20px; /* Reduzido para melhorar a responsividade */
-  justify-content: center;
-  align-items: center;
-  text-align: center; /* Centraliza o texto em telas menores */
+  padding: 20px;
+  justify-content: center; /* Mantém o alinhamento vertical */
+  align-items: flex-start; /* Alinha os itens à esquerda */
+  text-align: left; /* Alinha o texto à esquerda */
 `;
 
 const Heading = styled.h1`
   font-size: 64px;
   color: #1C244B;
-  max-width: 600px; /* Define uma largura máxima para o título */
-  margin: 0 auto; /* Centraliza horizontalmente */
-
+  max-width: 600px;
+  margin: 0; /* Remove centralização horizontal */
+  
+  span {
+    color: #f26c6c;
+  }
 
   @media (max-width: 1024px) {
-    font-size: 60px; /* Ajuste para telas médias */
+    font-size: 60px;
   }
 
   @media (max-width: 768px) {
-    font-size: 45px; /* Ajuste para tablets */
-    width: 90%; /* Aumenta a largura para ocupar mais espaço em telas menores */
+    font-size: 45px;
+    width: 90%;
   }
 
   @media (max-width: 480px) {
-    font-size: 35px; /* Ajuste para telas de celulares */
-    
+    font-size: 35px;
   }
 `;
 
 const Button = styled.a`
-  background-color:#5e81ac;
+  background-color: #5e81ac;
   border: none;
   padding: 10px 20px;
   font-size: 18px;
@@ -62,20 +64,20 @@ const Button = styled.a`
   height: 70px;
   border-radius: 12px;
   cursor: pointer;
-  text-decoration: none; /* Remove underline */
-  display: inline-flex; /* Para centralizar texto */
-  justify-content: center; /* Centraliza o texto horizontalmente */
-  align-items: center; /* Centraliza o texto verticalmente */
-  margin-top: 20px; /* Adicionado para espaçamento entre o título e o botão */
+  text-decoration: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
 
   &:hover {
-    background-color:  #2d9643;
+    background-color: #2d9643;
     border: solid 1px #F69152;
   }
 
   @media (max-width: 768px) {
     font-size: 24px;
-    width: 100%; /* Ajusta a largura do botão para ocupar 100% do contêiner */
+    width: 100%;
     height: 80px;
   }
 
@@ -93,7 +95,7 @@ const Home = () => {
     <Container>
       <TextSection>
         <Heading>
-          Descubra como alcançar seus objetivos de saúde e bem-estar com uma consulta online de nutrição personalizada.
+          <span>Descubra</span> como alcançar seus objetivos de <span>saúde</span> e bem-estar com uma <span>consulta</span> online de nutrição <span>personalizada</span>.
         </Heading>
         <Button href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(welcomeMessage)}`}>Marcar consulta</Button>
       </TextSection>
