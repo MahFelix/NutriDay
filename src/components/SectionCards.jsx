@@ -104,6 +104,11 @@ const SectionCards = () => {
   const welcomeMessage =
     'Olá! Seja bem-vindo(a) Sou Dayane Souza - Nutricionista. Estou aqui para ajudar você a alcançar seus objetivos de saúde e bem-estar de forma personalizada. Sinta-se à vontade para me enviar suas dúvidas ou agendar sua consulta.';
 
+  const handleWhatsAppMessage = (title) => {
+    const message = `${welcomeMessage} Estou interessado(a) no serviço: ${title}`;
+    return `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+  };
+
   const cardsData = [
     {
       icon: <FaHeartbeat size={40} color="#fff" />,
@@ -154,7 +159,13 @@ const SectionCards = () => {
           <Icon>{card.icon}</Icon>
           <Title>{card.title}</Title>
           <Description>{card.description}</Description>
-          <Button href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(welcomeMessage)}`}>Marcar Consulta</Button>
+          <Button
+            href={handleWhatsAppMessage(card.title)}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Marcar Consulta
+          </Button>
         </Card>
       ))}
     </Container>
@@ -162,3 +173,4 @@ const SectionCards = () => {
 };
 
 export default SectionCards;
+
