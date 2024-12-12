@@ -29,7 +29,7 @@ const Title = styled.h1`
   color: #EBC76D; /* Cinza escuro profissional */
 
   span {
-    color: #5e81ac; /* Azul intermediário elegante */
+    color: #EBC76D; /* Azul intermediário elegante */
   }
 `;
 
