@@ -28,8 +28,8 @@ const Title = styled.h1`
 
 // Estilos para cada pergunta
 const Question = styled.div`
-  background-color: #a3be8c; /* Verde suave para um toque natural */
-  color: white;
+  background-color: #043647; /* Verde suave para um toque natural */
+  color: #EBC76D;
   padding: 15px 20px;
   margin-bottom: 10px;
   cursor: pointer;
@@ -56,6 +56,7 @@ const Answer = styled.div`
   padding: 15px 20px;
   margin-bottom: 20px;
   border-radius: 8px;
+  margin-top: -10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   display: ${({ isOpen }) => (isOpen ? 'block' : 'none')};
   font-size: 18px;

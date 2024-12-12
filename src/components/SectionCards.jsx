@@ -17,7 +17,7 @@ export const Container = styled.div`
 `;
 
 export const Card = styled.div`
-  background-color: #a3be8c; /* Verde suave representando saúde */
+  background-color: #043647; /* Verde suave representando saúde */
   padding: 20px;
   border-radius: 12px;
   text-align: center;
@@ -51,7 +51,7 @@ export const Icon = styled.div`
 
 export const Title = styled.h2`
   font-size: 22px;
-  color: #2e3440; /* Cinza escuro para contraste */
+  color: White; /* Cinza escuro para contraste */
   margin-bottom: 8px;
 
   @media (max-width: 768px) {
@@ -61,7 +61,7 @@ export const Title = styled.h2`
 
 export const Description = styled.p`
   font-size: 16px;
-  color: #4c566a; /* Cinza suave para texto */
+  color: white; /* Cinza suave para texto */
   margin-bottom: 12px;
 
   @media (max-width: 768px) {
@@ -70,7 +70,7 @@ export const Description = styled.p`
 `;
 
 export const Button = styled.a`
-  background-color: #5e81ac; /* Azul intermediário elegante */
+  background-color: #EBC76D; /* Azul intermediário elegante */
   display: flex;
   border: none;
   padding: 12px 16px;

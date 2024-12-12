@@ -37,7 +37,7 @@ const Heading = styled.h1`
   margin: 0; /* Remove centralização horizontal */
   
   span {
-    color: #f26c6c;
+    color: #e6b845;
   }
 
   @media (max-width: 1024px) {
@@ -55,12 +55,12 @@ const Heading = styled.h1`
 `;
 
 const Button = styled.a`
-  background-color: #5e81ac;
+  background-color: #043647;
   border: none;
   padding: 10px 20px;
   font-size: 18px;
   color: white;
-  width: 200px;
+  width: 500px;
   height: 70px;
   border-radius: 12px;
   cursor: pointer;
@@ -71,7 +71,7 @@ const Button = styled.a`
   margin-top: 20px;
 
   &:hover {
-    background-color: #2d9643;
+    background-color: #EBC76D;
     border: solid 1px #F69152;
   }
 

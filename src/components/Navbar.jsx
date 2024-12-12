@@ -8,7 +8,7 @@ const Nav = styled.nav`
   align-items: center;
   padding: 20px;
   position: relative; /* Necessário para posicionar o menu */
-  background-color: #88c0d0; /* Azul claro harmonioso */
+  background-color: #043647; /* Azul claro harmonioso */
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
 `;
@@ -26,7 +26,7 @@ const LogoImage = styled.img`
 
 const Title = styled.h1`
   font-size: 24px;
-  color: #2e3440; /* Cinza escuro profissional */
+  color: #EBC76D; /* Cinza escuro profissional */
 
   span {
     color: #5e81ac; /* Azul intermediário elegante */
@@ -61,7 +61,7 @@ const NavLink = styled.a`
   font-size: 18px;
   padding: 10px;
   border-radius: 6px;
-  background-color: #a3be8c; /* Verde suave representando saúde */
+  background-color: #EBC76D; /* Verde suave representando saúde */
 
   &:hover {
     color: #4c566a; /* Escurece no hover */
