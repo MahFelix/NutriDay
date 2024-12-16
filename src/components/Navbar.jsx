@@ -57,11 +57,12 @@ const NavLinkContainer = styled.div`
 
 const NavLink = styled.a`
   text-decoration: none;
-  color: #2e3440; /* Cinza escuro para texto */
+  color: #EBC76D; /* Cinza escuro para texto */
   font-size: 18px;
   padding: 10px;
   border-radius: 6px;
-  background-color: #EBC76D; /* Verde suave representando saúde */
+  border: 1px solid #EBC76D ;
+  background-color: #043647; /* Verde suave representando saúde */
 
   &:hover {
     color: #4c566a; /* Escurece no hover */
@@ -69,7 +70,7 @@ const NavLink = styled.a`
 
   @media (max-width: 768px) {
     display: flex;
-    background-color: #88c0d0; /* Azul claro no mobile */
+    background-color: #043647; /* Azul claro no mobile */
     width: 100%;
     margin-top: 4px;
     border-radius: 14px;

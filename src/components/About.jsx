@@ -83,7 +83,7 @@ const Button = styled.a`
 
   @media (max-width: 480px) {
     font-size: 17px;
-    width: 130px;
+    width: 250px;
     height: 50px;
   }
 `;
