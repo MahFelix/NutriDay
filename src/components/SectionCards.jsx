@@ -102,10 +102,10 @@ export const Button = styled.a`
 const SectionCards = () => {
   const whatsappNumber = '5579996848609';
   const welcomeMessage =
-    'Olá! Seja bem-vindo(a) Sou Dayane Souza - Nutricionista. Estou aqui para ajudar você a alcançar seus objetivos de saúde e bem-estar de forma personalizada. Sinta-se à vontade para me enviar suas dúvidas ou agendar sua consulta.';
+    'Olá! Seja bem-vindo(a) Sou *Dayane Souza - Nutricionista* . Estou aqui para ajudar você a alcançar seus objetivos de saúde e bem-estar de forma personalizada. Sinta-se à vontade para me enviar suas dúvidas ou agendar sua consulta.';
 
   const handleWhatsAppMessage = (title) => {
-    const message = `${welcomeMessage} Estou interessado(a) no serviço: ${title}`;
+    const message = `${welcomeMessage} *Estou interessado(a) no serviço: ${title}*`;
     return `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
   };
 

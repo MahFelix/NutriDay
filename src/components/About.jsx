@@ -90,7 +90,7 @@ const Button = styled.a`
 
 const Home = () => {
   const whatsappNumber = '5579996848609'; // Substitua pelo número de telefone da nutricionista
-  const welcomeMessage = 'Olá! Seja bem-vindo(a) Sou *Dayane Souza - Nutricionista*. Estou aqui para ajudar você a alcançar seus objetivos de saúde e bem-estar de forma personalizada. Sinta-se à vontade para me enviar suas dúvidas ou agendar uma consulta.';
+  const welcomeMessage = 'Olá! Seja bem-vindo(a) Sou *Dayane Souza* - *Nutricionista*. Estou aqui para ajudar você a alcançar seus objetivos de saúde e bem-estar de forma personalizada. Sinta-se à vontade para me enviar suas dúvidas ou agendar uma consulta.';
   return (
     <Container>
       <TextSection>
