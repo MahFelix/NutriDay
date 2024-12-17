@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import MobileBackgroundImage from "../assets/Dayback3.webp"; // Imagem para mobile
-import DesktopBackgroundImage from "../assets/Dayback1.png"; // Nova imagem para desktop
+import DesktopBackgroundImage from "../assets/Daydesk.png"; // Nova imagem para desktop
 
 // Container principal
 export const PageContainer = styled.div`
@@ -14,18 +14,21 @@ export const PageContainer = styled.div`
 // Seção de background azul com imagem
 export const BackgroundSection = styled.div`
   width: 100%;
-  height: 300px;
+  height: 300px; /* Altura padrão para mobile */
   background-color: #003d52;
   border-radius: 10px;
   position: relative;
   background-size: cover;
   background-position: center;
-
   background-image: url(${MobileBackgroundImage});
 
   @media (min-width: 768px) {
-    height: 800px; /* Aumenta o tamanho no desktop */
+    height: 600px; /* Reduz a altura para desktop */
     background-image: url(${DesktopBackgroundImage});
+  }
+
+  @media (min-width: 1200px) {
+    height: 400px; /* Ajuste ainda mais para telas muito grandes */
   }
 `;
 
