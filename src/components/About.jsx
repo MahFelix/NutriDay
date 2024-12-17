@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import backgroundImage from '../assets/BG.webp'; // Substitua pelo caminho correto da sua imagem
-import backgroundImageMobile from '../assets/daymobile1.png';
+import backgroundImageMobile from '../assets/BG-m1.webp';
 
 const Container = styled.div`
   display: flex;
