@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import styled from 'styled-components';
-import LogoND from '../assets/Camada 1.png';
+import LogoND from '../assets/Camada-1.svg';
 
 const Nav = styled.nav`
   display: flex;
