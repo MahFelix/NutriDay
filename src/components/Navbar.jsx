@@ -6,14 +6,12 @@ const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
-  padding-left: 64px;
-  padding-right: 64px;
-  position: relative; /* Necessário para posicionar o menu */
+  padding: 20px 64px;
+  position: relative;
   background-color: #043647; /* Azul claro harmonioso */
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
-  z-index: 11;
+
 `;
 
 const LogoContainer = styled.div`
@@ -44,44 +42,39 @@ const NavLinkContainer = styled.div`
     position: absolute;
     top: 100%;
     right: 0;
-    display: flex;
-    justify-content: center;
-    background-color:#0436478b; /* Fundo claro para contraste */
     flex-direction: column;
     align-items: center;
+    background-color: rgba(4, 54, 71, 0.8); /* Fundo translúcido */
     width: 80%;
-    padding: 1px 20px;
-    margin-top: -5px;
+    padding: 10px 20px;
+    margin-top: -20px;
     margin-right: 40px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 4px;
+    border-radius: 10px;
     max-height: ${({ isOpen }) => (isOpen ? '300px' : '0')};
     overflow: hidden;
     transition: max-height 0.7s ease-in-out;
-    z-index: 10;
+  
   }
 `;
 
 const NavLink = styled.a`
   text-decoration: none;
-  color: #EBC76D; /* Cinza escuro para texto */
+  color: #EBC76D;
   font-size: 18px;
   padding: 10px;
   border-radius: 6px;
-  background-color: #043647; /* Verde suave representando saúde */
+  background-color: #043647;
 
   &:hover {
-    color: #a58c4c; /* Escurece no hover */
+    color: #a58c4c;
   }
 
   @media (max-width: 768px) {
-    display: flex;
-    background-color: #043647; /* Azul claro no mobile */
     width: 100%;
     margin-top: 4px;
     border-radius: 14px;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
   }
 `;
 
@@ -99,7 +92,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
-    setIsOpen(!isOpen);
+    setIsOpen((prev) => !prev); // Alterna o estado de visibilidade do menu
   };
 
   return (
@@ -121,7 +114,7 @@ const Navbar = () => {
         <NavLink href="#serviços"><strong>Planos Alimentares</strong></NavLink>
         <NavLink href="#sobre"><strong>Sobre</strong></NavLink>
         <NavLink href="#imc"><strong>Contato</strong></NavLink>
-        <NavLink target='_blank' href="https://imcday.netlify.app/"><strong>Calcule seu IMC</strong></NavLink>
+        <NavLink target="_blank" href="https://imcday.netlify.app/"><strong>Calcule seu IMC</strong></NavLink>
         <NavLink href="#faq"><strong>FAQ</strong></NavLink>
       </NavLinkContainer>
     </Nav>
