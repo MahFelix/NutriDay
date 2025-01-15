@@ -61,7 +61,7 @@ const NavLink = styled.a`
   font-size: 18px;
   padding: 10px;
   border-radius: 6px;
-  border: 1px solid #EBC76D ;
+  border: 1px solid #79ddb3 ;
   background-color: #043647; /* Verde suave representando saúde */
 
   &:hover {
@@ -70,7 +70,7 @@ const NavLink = styled.a`
 
   @media (max-width: 768px) {
     display: flex;
-    background-color: #043647; /* Azul claro no mobile */
+    background-color: #043647ca; /* Azul claro no mobile */
     width: 100%;
     margin-top: 4px;
     border-radius: 14px;

@@ -21,6 +21,7 @@ export const BackgroundSection = styled.div`
   background-size: cover;
   background-position: center;
   background-image: url(${MobileBackgroundImage});
+  padding: 150px;
 
   @media (min-width: 768px) {
     height: 600px; /* Reduz a altura para desktop */
