@@ -15,7 +15,7 @@ export const PageContainer = styled.div`
 export const BackgroundSection = styled.div`
   width: 100%;
   height: 300px; /* Altura padrão para mobile */
-  background-color: #003d52;
+  background-color: #b8babd;
   border-radius: 10px;
   position: relative;
   background-size: cover;

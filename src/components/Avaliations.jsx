@@ -1,4 +1,8 @@
 import styled from "styled-components";
+import Avatar1 from '../assets/avatar1.webp'
+import Avatar2 from '../assets/avatar2.webp'
+import Avatar3 from '../assets/avatar3.webp'
+import Avatar4 from '../assets/avatar4.webp'
 
 // Container principal da avaliação
 const ReviewContainer = styled.div`
@@ -95,14 +99,14 @@ function ReviewCard() {
     <ReviewContainer>
       {/* Grupo de avatares */}
       <AvatarGroup>
-        <img src="/assets/avatar1.jpg" alt="Avatar 1" />
-        <img src="/assets/avatar2.jpg" alt="Avatar 2" />
-        <img src="/assets/avatar3.jpg" alt="Avatar 3" />
-        <img src="/assets/avatar4.jpg" alt="Avatar 4" />
+        <img src={Avatar1} alt="Avatar 1" />
+        <img src={Avatar2} alt="Avatar 2" />
+        <img src={Avatar3} alt="Avatar 3" />
+        <img src={Avatar4} alt="Avatar 4" />
       </AvatarGroup>
 
       {/* Bolha +200 */}
-      <PlusBubble>+100</PlusBubble>
+      <PlusBubble>+102</PlusBubble>
 
       {/* Seção de estrelas */}
       <StarSection>

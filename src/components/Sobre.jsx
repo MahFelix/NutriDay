@@ -23,6 +23,7 @@ const TextSection = styled.div`
   text-align: center;
   gap: 20px;
 
+
   @media (max-width: 768px) {
     gap: 15px;
   }
@@ -31,6 +32,7 @@ const TextSection = styled.div`
 const Heading = styled.h1`
   font-size: 36px;
   color: #1C244B;
+
 
   @media (max-width: 768px) {
     font-size: 28px;
@@ -41,7 +43,7 @@ const Paragraph = styled.p`
   font-size: 20px;
   color: #1C244B;
   line-height: 1.6;
-  width: 80%;
+  width: 40%;
 
   @media (max-width: 768px) {
     font-size: 18px;
