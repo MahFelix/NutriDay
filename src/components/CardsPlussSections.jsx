@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import MobileBackgroundImage from "../assets/Dayback3.webp"; // Imagem para mobile
-import DesktopBackgroundImage from "../assets/Daydesk.png"; // Nova imagem para desktop
+import DesktopBackgroundImage from "../assets/DayDesk.png"; // Nova imagem para desktop
 
 // Container principal
 export const PageContainer = styled.div`
