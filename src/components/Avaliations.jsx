@@ -17,6 +17,7 @@ const ReviewContainer = styled.div`
   margin-bottom: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 
+
   @media (max-width: 768px) {
     flex-direction: column;
     padding: 15px;
