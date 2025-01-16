@@ -28,6 +28,13 @@ const TextSection = styled.div`
   justify-content: center; /* Mantém o alinhamento vertical */
   align-items: flex-start; /* Alinha os itens à esquerda */
   text-align: left; /* Alinha o texto à esquerda */
+
+  @media (max-width: 768px) {
+  justify-content: center; /* Mantém o alinhamento vertical */
+  align-items: center; /* Alinha os itens à esquerda */
+  text-align: center; /* Alinha o texto à esquerda */
+    
+  }
 `;
 
 const Heading = styled.h1`

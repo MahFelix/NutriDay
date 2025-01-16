@@ -6,12 +6,16 @@ const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 64px;
+  padding: 8px 64px;
   position: relative;
   background-color: #043647; /* Azul claro harmonioso */
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
 
+
+  @media (max-width: 768px) {
+    padding: 20px;
+  }
 `;
 
 const LogoContainer = styled.div`
