@@ -31,10 +31,10 @@ const LogoImage = styled.img`
 
 const Title = styled.h1`
   font-size: 24px;
-  color: #EBC76D; /* Cinza escuro profissional */
+  color: #E6B845; /* Cinza escuro profissional */
 
   span {
-    color: #EBC76D; /* Azul intermediário elegante */
+    color: #E6B845; /* Azul intermediário elegante */
   }
 `;
 
@@ -64,7 +64,7 @@ const NavLinkContainer = styled.div`
 
 const NavLink = styled.a`
   text-decoration: none;
-  color: #EBC76D;
+  color: #E6B845;
   font-size: 18px;
   padding: 10px;
   border-radius: 6px;
