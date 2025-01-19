@@ -70,7 +70,7 @@ export const Description = styled.p`
 `;
 
 export const Button = styled.a`
-  background-color: #EBC76D; /* Azul intermediário elegante */
+  background-color: #E6B845; /* Azul intermediário elegante */
   display: flex;
   border: none;
   padding: 12px 16px;
