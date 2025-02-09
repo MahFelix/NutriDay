@@ -48,7 +48,7 @@ const NavLinkContainer = styled.div`
     right: 0;
     flex-direction: column;
     align-items: center;
-    background-color: rgba(4, 54, 71, 0.8); /* Fundo translúcido */
+    background-color: rgba(4, 54, 71, 0.164); /* Fundo translúcido */
     width: 80%;
     padding: 10px 20px;
     margin-top: -20px;
