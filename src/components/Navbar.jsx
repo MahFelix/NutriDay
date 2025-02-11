@@ -39,7 +39,8 @@ const Title = styled.h1`
 
 const NavLinkContainer = styled.div`
   display: flex;
-  gap: 10px;
+
+  
 
   @media (max-width: 768px) {
     position: absolute;
