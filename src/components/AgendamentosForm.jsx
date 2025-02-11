@@ -9,6 +9,7 @@ const FormContainer = styled.div`
   border: 1px solid #ccc;
   border-radius: 5px;
   background-color: #D8DEE9;
+  margin-bottom: 20px;
 `;
 
 const Form = styled.form`

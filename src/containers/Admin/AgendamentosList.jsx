@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 import axios from 'axios';
 
@@ -107,6 +108,7 @@ const EditForm = styled.form`
 const AgendamentosList = () => {
   const [agendamentos, setAgendamentos] = useState([]);
   const [editing, setEditing] = useState(null); // Estado para controlar a edição
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     nomePaciente: '',
     emailPaciente: '',
@@ -127,6 +129,15 @@ const AgendamentosList = () => {
 
     fetchAgendamentos();
   }, []);
+  
+
+  useEffect(() => {
+    const token = localStorage.getItem('authToken');
+    if (!token) {
+      navigate('/login'); // Redireciona para a página de login se não estiver autenticado
+    }
+  }, [navigate]);
+  
 
   const handleDelete = async (id) => {
     try {

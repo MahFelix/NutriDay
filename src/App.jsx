@@ -1,33 +1,34 @@
-import Navbar from './components/Navbar';
-import About from './components/About.jsx';
-import GlobalStyle from '../globalStyles';
-import SectionCards from './components/SectionCards.jsx';;
-import Sobre from './components/Sobre.jsx'
-import FAQPage from './components/FAQPage.jsx';
-import Footer from './components/Footer.jsx';
-import Avaliations from './components/Avaliations.jsx'
-import  CardSection from './components/CardsPlussSections.jsx';
-import AgendamentosForm from './components/AgendamentosForm.jsx';
-import AgendamentosList from './components/AgendamentosList.jsx';
+/* eslint-disable react/prop-types */
+import Navbar from "./components/Navbar";
+import About from "./components/About";
+import GlobalStyle from "../globalStyles";
+import SectionCards from "./components/SectionCards";
+import Sobre from "./components/Sobre";
+import FAQPage from "./components/FAQPage";
+import Footer from "./components/Footer";
+import Avaliations from "./components/Avaliations";
+import CardSection from "./components/CardsPlussSections";
 
-GlobalStyle
+
+
 
 const App = () => {
+
+
   return (
     <>
-    
-    <GlobalStyle/>
+
+      <GlobalStyle />
       <Navbar />
       <About />
       <CardSection />
-      <SectionCards/>
-      <Sobre/>
+      <SectionCards />
+      <Sobre />
       <Avaliations />
-      <AgendamentosForm/>
-      <AgendamentosList/>
-      <FAQPage/>
-      <Footer/>
+   
+      <FAQPage />
 
+      <Footer />
     </>
   );
 };

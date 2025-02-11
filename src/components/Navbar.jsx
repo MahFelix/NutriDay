@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 import LogoND from '../assets/Camada-1.svg';
 
@@ -8,10 +9,9 @@ const Nav = styled.nav`
   align-items: center;
   padding: 8px 64px;
   position: relative;
-  background-color: #043647; /* Azul claro harmonioso */
+  background-color: #043647;
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
-
 
   @media (max-width: 768px) {
     padding: 20px;
@@ -31,10 +31,10 @@ const LogoImage = styled.img`
 
 const Title = styled.h1`
   font-size: 24px;
-  color: #E6B845; /* Cinza escuro profissional */
+  color: #E6B845;
 
   span {
-    color: #E6B845; /* Azul intermediário elegante */
+    color: #E6B845;
   }
 `;
 
@@ -48,7 +48,7 @@ const NavLinkContainer = styled.div`
     right: 0;
     flex-direction: column;
     align-items: center;
-    background-color: rgba(4, 54, 71, 0.164); /* Fundo translúcido */
+    background-color: rgba(4, 54, 71, 0.164);
     width: 80%;
     padding: 10px 20px;
     margin-top: -20px;
@@ -58,7 +58,6 @@ const NavLinkContainer = styled.div`
     max-height: ${({ isOpen }) => (isOpen ? '300px' : '0')};
     overflow: hidden;
     transition: max-height 0.7s ease-in-out;
-  
   }
 `;
 
@@ -69,6 +68,7 @@ const NavLink = styled.a`
   padding: 10px;
   border-radius: 6px;
   background-color: #043647;
+  cursor: pointer;
 
   &:hover {
     color: #a58c4c;
@@ -94,9 +94,10 @@ const HamburgerMenu = styled.div`
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate(); // Hook para navegação
 
   const toggleMenu = () => {
-    setIsOpen((prev) => !prev); // Alterna o estado de visibilidade do menu
+    setIsOpen((prev) => !prev);
   };
 
   return (
@@ -111,7 +112,7 @@ const Navbar = () => {
       </LogoContainer>
 
       <HamburgerMenu onClick={toggleMenu}>
-        ☰ {/* Ícone do menu hambúrguer */}
+        ☰
       </HamburgerMenu>
 
       <NavLinkContainer isOpen={isOpen}>
@@ -120,6 +121,7 @@ const Navbar = () => {
         <NavLink href="#imc"><strong>Contato</strong></NavLink>
         <NavLink target="_blank" href="https://imcday.netlify.app/"><strong>Calcule seu IMC</strong></NavLink>
         <NavLink href="#faq"><strong>FAQ</strong></NavLink>
+        <NavLink onClick={() => navigate('/login')}><strong>Login</strong></NavLink> {/* Novo link de Login */}
       </NavLinkContainer>
     </Nav>
   );
