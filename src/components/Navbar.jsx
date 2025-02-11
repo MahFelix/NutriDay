@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 import LogoND from '../assets/Camada-1.svg';
 
@@ -94,7 +93,7 @@ const HamburgerMenu = styled.div`
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const navigate = useNavigate(); // Hook para navegação
+
 
   const toggleMenu = () => {
     setIsOpen((prev) => !prev);
@@ -121,7 +120,7 @@ const Navbar = () => {
         <NavLink href="#imc"><strong>Contato</strong></NavLink>
         <NavLink target="_blank" href="https://imcday.netlify.app/"><strong>Calcule seu IMC</strong></NavLink>
         <NavLink href="#faq"><strong>FAQ</strong></NavLink>
-        <NavLink onClick={() => navigate('/login')}><strong>Login</strong></NavLink> {/* Novo link de Login */}
+        <NavLink href='https://login-interface-phi.vercel.app/'><strong>Login</strong></NavLink> {/* Novo link de Login */}
       </NavLinkContainer>
     </Nav>
   );
