@@ -116,11 +116,11 @@ const Navbar = () => {
       </HamburgerMenu>
 
       <NavLinkContainer isOpen={isOpen}>
-        <NavLink href="#serviços"><strong>Planos Alimentares</strong></NavLink>
+        <NavLink href="#serviços"><strong>Planos alimentares</strong></NavLink>
         <NavLink href="#sobre"><strong>Sobre</strong></NavLink>
         <NavLink href="#imc"><strong>Contato</strong></NavLink>
         <NavLink target="_blank" href="https://imcday.netlify.app/"><strong>Calcule seu IMC</strong></NavLink>
-        <NavLink href="#faq"><strong>FAQ</strong></NavLink>
+        <NavLink href="#faq"><strong>Perguntas frequentes</strong></NavLink>
         <NavLink href='https://login-interface-phi.vercel.app/'><strong>Login</strong></NavLink> {/* Novo link de Login */}
       </NavLinkContainer>
     </Nav>

@@ -118,7 +118,7 @@ const FAQPage = () => {
 
   return (
     <Container id='faq'>
-      <Title>Perguntas Frequentes</Title>
+      <Title>PERGUNTAS FREQUENTES</Title>
       {faqData.map((item, index) => (
         <FAQItem key={index} question={item.question} answer={item.answer} />
       ))}
